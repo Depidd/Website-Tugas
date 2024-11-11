@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: aliceblue;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000B58;
+    position: relative;
+    flex: 1;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    margin: 10px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #003161;
+    position: relative;
+    flex: 1;
+    max-width: 250px;
+    height: 820px;
+    margin: 0px;
+    border-radius: 10px;
+    top: 10px;
+    left: 10px;
+}
+
+.sidebar-header {
+    font-size: 30px;
+    color: white;
+    position: relative;
+    box-shadow: 1px white;
+    transition: 0,5s;
+    justify-content: center;
+}
+
+.sidebar-heder:hover{
+    bottom: 30px;
+    border: 1px solid rgb(0, 132, 255);
+}
+
+.sidebar-header p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 50px;
+    padding-left: 0px;
+    font-weight: 1000;
+    padding-bottom: 90px;
+}
+
+.sidebar-list {
+    margin-top: 0px;
+    padding: 0;
+}
+
+.sidebar-list ul li {
+    list-style: none;
+}
+
+li.a active {
+    background-color: rgb(255, 251, 0);
+}
+
+.sidebar-list ul li a {
+    display: block;
+    line-height: 80px;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    box-sizing: border-box rgb(0, 255, 234);
+    width: auto;
+    border-top: 3px solid rgb(0, 68, 255);
+    color: white;
+    top: 0px;
+    right: 10px;
+}
+
+.sidebar-list ul li a:hover{
+    padding-left: 15px;
+    color: rgb(255, 166, 0);
+}
+
+.konten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #003161;
+    position: relative;
+    flex: 1;
+    margin: 5px;
+    height: 820px;
+    margin: 10px;
+    border-radius: 10px;
+    left: 10px;
+}
+
+.konten-header h1{
+    margin-top: 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    bottom: 290px;
+    position: relative;
+    justify-content: center;
+    left: 145%;
+    font-size: 90px;
+}
+
+.konten-tabel {
+    position: relative;
+    justify-content: center;
+    padding-right: 240px;
+    width: 1000px;
+    height: auto;
+    top: 40px;
+}
+
+.aktif {
+    font-size: 24px;
+    text-align: center;
+    background-color: #046cd4;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000B58;
+    position: relative;
+    flex: 1;
+    margin: 5px;
+    border-radius: 10px;
+    bottom: 0px;
+}
+
+.footer footer {
+    font-size: 20px;
+    margin: 20px;
+}

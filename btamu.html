@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARU AJA MULAI</title>
+    <link rel="stylesheet" href="btamu.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="header">
+                <h1>WEBSITE PRIBADI SAYA</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sidebar">
+                <div class="sidebar-list">
+                    <div class="sidebar-header"> <p>ABOUT ME</p>
+                        <ul>
+                        <li><a class="active" href="index.html"><i data-feather="home"></i>Home</a></li>
+                        <li><a href="profil.html"><i data-feather="user"></i>Profile</a></li>
+                        <li><a href="btamu.html"><i data-feather="book-open"></i>G.Book</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="konten">
+                <div class="guest-book">
+                    <div class="header-gbook">
+                    <h1>Kritik & Saran</h1>
+                    </div>
+                    <div class="gbook-isi">
+                    <form id="guestBookForm">
+                        <input type="text" id="name" placeholder="Nama Kamu" required>
+                        <textarea id="message" rows="4" placeholder="Ketik Pesan/Kritik & Saran Kamu" required></textarea>
+                        <button class="alive" type="submit" onclick="tekan()">Kirim</button>
+                    </form>
+                    </div>
+                    <div id="entries"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer">
+                <footer>2411500047_DevidWinataHerwandi_TI1B_UTS Pemograman Web</footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('guestBookForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+
+            const entryDiv = document.createElement('div');
+            entryDiv.classList.add('entry');
+            entryDiv.innerHTML = `<h3>${name}</h3><p>${message}</p>`;
+            document.getElementById('entries').appendChild(entryDiv);
+
+            // Clear the form
+            document.getElementById('guestBookForm').reset();
+        });
+    </script>
+</body>
+</html>
